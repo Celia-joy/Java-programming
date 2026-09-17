@@ -5,10 +5,19 @@ public class Main{
         student1.setFirstName("Celia");
         student1.setLastName("Joy");
         student1.setAge(16);
+        student1.introduceStudent();
+        student1.displayInfo();
+        student1.displayInfo("Welcome to the student information system!");
         
         System.out.println(student1.getFirstName());
         System.out.println(student1.getLastName());
         System.out.println(student1.getAge());
+
+        int remaining = student1.yearsUntil18(student1.getAge());
+        System.out.println("You have " + remaining + " years to be an adult 😭😭😭");
+        //System.out.println(student1.yearsUntil18(student1.getAge()));
+
+        
     }
     
 }

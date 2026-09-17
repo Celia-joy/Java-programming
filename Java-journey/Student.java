@@ -24,4 +24,18 @@ class Student{
             this.age = age;
         }
     }
+    public void introduceStudent(){
+        System.out.println("Hello, my name is " + firstName + " " + lastName);
+    }
+    public int yearsUntil18(int age){
+        return 18-age;
+    }
+    public void displayInfo(){
+        System.out.println(" Here's the Student Information:");
+    }
+    public void displayInfo(String message){
+        System.out.println(message);
+        System.out.println("Student name is: " + firstName + " " + lastName);
+        System.out.println("Student age is: " + age);
+    }
 }
