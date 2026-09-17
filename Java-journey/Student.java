@@ -45,7 +45,8 @@ class Student{
         System.out.println("Student object is created");
     }
     public Student(String firstName, String lastName){
-        this.firstName = firstName;
-        this.lastName = lastName;
+        /*this.firstName = firstName;
+        this.lastName = lastName;*/
+        this(firstName, lastName, 0);
     }
 }
