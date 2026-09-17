@@ -38,4 +38,14 @@ class Student{
         System.out.println("Student name is: " + firstName + " " + lastName);
         System.out.println("Student age is: " + age);
     }
+    public Student(String firstName, String lastName, int age){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        System.out.println("Student object is created");
+    }
+    public Student(String firstName, String lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 }
