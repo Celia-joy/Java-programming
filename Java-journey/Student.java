@@ -41,7 +41,9 @@ class Student{
     public Student(String firstName, String lastName, int age){
         this.firstName = firstName;
         this.lastName = lastName;
-        this.age = age;
+        if(age >= 0 && age <=100){
+            this.age = age;
+        }
         System.out.println("Student object is created");
     }
     public Student(String firstName, String lastName){

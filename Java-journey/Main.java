@@ -25,6 +25,16 @@ public class Main{
         System.out.println(student2.getFirstName());
         System.out.println(student2.getLastName());
 
+        Teacher teacher = new Teacher();
+        Teacher teacher1 = new Teacher("Jean Damascene", "HABANABASHAKA", 45);
+        teacher.setFirstName("Larissa");
+        teacher.setLastName("MUSANINYANGE");
+        teacher.setAge(30);
+
+        System.out.println(teacher.getFirstName());
+        System.out.println(teacher.getLastName());
+        System.out.println(teacher.getAge());
+
         
     }
     
