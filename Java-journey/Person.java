@@ -19,7 +19,7 @@ class Person{
         this.lastName = lastName;
     }
     public void setAge(int age){
-        if(age >= 0 || age <= 100){
+        if(age >= 0 && age <= 100){
             this.age = age;
         }
     }
@@ -30,5 +30,8 @@ class Person{
             this.age = age;
         }
         System.out.println("Person constructor called");
+    }
+    public void introduce(){
+        System.out.println("I am a person");
     }
 }
