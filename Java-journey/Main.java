@@ -40,6 +40,9 @@ public class Main{
         System.out.println(teacher1.getLastName());
         System.out.println(teacher1.getAge());
         teacher1.introduce();
+
+        Person person = new Teacher("Hilaire", "HATANGIMBABAZI", 35);
+        person.introduce();
         
     }
     
