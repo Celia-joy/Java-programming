@@ -7,5 +7,8 @@ class Teacher extends Person{
     public void introduce(){
         System.out.println("I am a teacher");
     }
+    public void teachClass(){
+        System.out.println("Teaching Java!");
+    }
 
 }

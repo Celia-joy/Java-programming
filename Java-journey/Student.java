@@ -1,31 +1,6 @@
-class Student{
-    private String firstName;
-    private String lastName;
-    private int age;
-
-    public String getFirstName(){
-        return firstName;
-    }
-    public String getLastName(){
-        return lastName;
-    }
-    public int getAge(){
-        return age;
-    }
-
-    public void setFirstName(String firstName){
-        this.firstName = firstName;
-    }
-    public void setLastName(String lastName){
-        this.lastName = lastName;
-    }
-    public void setAge(int age){
-        if(age>=0 && age<=100){
-            this.age = age;
-        }
-    }
+class Student extends Person{
     public void introduceStudent(){
-        System.out.println("Hello, my name is " + firstName + " " + lastName);
+        System.out.println("Hello, my name is " + getFirstName() + " " + getLastName());
     }
     public int yearsUntil18(int age){
         return 18-age;
@@ -35,20 +10,28 @@ class Student{
     }
     public void displayInfo(String message){
         System.out.println(message);
-        System.out.println("Student name is: " + firstName + " " + lastName);
-        System.out.println("Student age is: " + age);
+        System.out.println("Student name is: " + getFirstName() + " " + getLastName());
+        System.out.println("Student age is: " + getAge());
     }
     public Student(String firstName, String lastName, int age){
-        this.firstName = firstName;
+        super(firstName, lastName, age);
+        /*this.firstName = firstName;
         this.lastName = lastName;
         if(age >= 0 && age <=100){
             this.age = age;
-        }
+        }*/
         System.out.println("Student object is created");
     }
     public Student(String firstName, String lastName){
         /*this.firstName = firstName;
         this.lastName = lastName;*/
         this(firstName, lastName, 0);
+    }
+    @Override
+    public void introduce(){
+        System.out.println("I'm a student");
+    }
+    public void Study(){
+        System.out.println("Studying java");
     }
 }

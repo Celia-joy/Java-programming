@@ -41,9 +41,37 @@ public class Main{
         System.out.println(teacher1.getAge());
         teacher1.introduce();
 
-        Person person = new Teacher("Hilaire", "HATANGIMBABAZI", 35);
-        person.introduce();
-        
+        Person person1 = new Teacher("Hilaire", "HATANGIMBABAZI", 35);
+        person1.introduce();
+        Person person2 = new Student("Anne", "Line", 16);
+        person2.introduce();
+
+        Person[] people = {
+            new Teacher("Awet", "Fesseha", 40),
+            new Student("Belise", "MBARUSHIMANA", 17),
+            new Teacher("Jean Bosco", "UWITONZE", 50),
+            new Student("Pamela", "IMENA", 17)
+        };
+        for (Person person : people){
+            person.introduce();
+        }
+
+        Person person3 = new Teacher("Aphrodice", "RWAGAJU", 45);
+        /*Teacher teacher3 = (Teacher) person3;
+        teacher3.teachClass();*/
+
+        Person person4 = new Student("Henriette", "UMUHOZA", 17);
+        /*Student student4 = (Student) person4;
+        student4.Study();*/
+
+        if(person3 instanceof Teacher){
+            Teacher teacher3 = (Teacher) person3;
+            teacher3.teachClass();
+        }
+        if(person4 instanceof Student){
+            Student student4 = (Student) person4;
+            student4.Study();
+        }
     }
     
 }
