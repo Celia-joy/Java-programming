@@ -20,7 +20,14 @@ class Student extends Person{
         if(age >= 0 && age <=100){
             this.age = age;
         }*/
+       this.email = email;
+       this.address = address;
         System.out.println("Student object is created");
+    }
+    public Student(String firstName, String lastName, int age, String email, String address){
+        super(firstName,lastName,age);
+        this.email = email;
+        this.address = address;
     }
     public Student(String firstName, String lastName){
         /*this.firstName = firstName;
@@ -33,5 +40,9 @@ class Student extends Person{
     }
     public void Study(){
         System.out.println("Studying java");
+    }
+    public void test(){
+        System.out.println("Email: " + email);
+        System.out.println("Address: " + address);
     }
 }

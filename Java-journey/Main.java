@@ -3,12 +3,15 @@ public class Main{
     public static void main(String[] args){
         Student student1 = new Student("Celia", "Joy",16);
         Student student2 = new Student("Jenny", "Miriotta");
+        Student student3 = new Student("Celia", "Joy",16,"joyihirwecelia@gmail.com", "Kigali, Rwanda");
+
         /*student1.setFirstName("Celia");
         student1.setLastName("Joy");
         student1.setAge(16);*/
         student1.introduceStudent();
         student1.displayInfo();
         student1.displayInfo("Welcome to the student information system!");
+        student3.test();
         
         System.out.println(student1.getFirstName());
         System.out.println(student1.getLastName());

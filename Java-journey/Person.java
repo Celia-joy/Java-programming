@@ -2,6 +2,8 @@ class Person{
     private String firstName;
     private String lastName;
     private int age;
+    protected String address;
+    public String email;
 
     public String getFirstName(){
         return firstName;
