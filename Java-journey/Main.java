@@ -1,7 +1,7 @@
 
 public class Main{
     public static void main(String[] args){
-        Student student1 = new Student("Celia", "Joy",16);
+        final Student student1 = new Student("Celia", "Joy",16);
         Student student2 = new Student("Jenny", "Miriotta");
         Student student3 = new Student("Celia", "Joy",16,"joyihirwecelia@gmail.com", "Kigali, Rwanda");
 
@@ -12,6 +12,10 @@ public class Main{
         student1.displayInfo();
         student1.displayInfo("Welcome to the student information system!");
         student3.test();
+        student1.setAge(17);
+
+        //Compilation error
+        //student1 = new Student("Jenny", "Miriotta", 16);
         
         System.out.println(student1.getFirstName());
         System.out.println(student1.getLastName());
@@ -75,6 +79,8 @@ public class Main{
             Student student4 = (Student) person4;
             student4.Study();
         }
+        Person person5 = new Person(101, "Belise", "SIMBI", 16);
+        person5.introduce();
     }
     
 }

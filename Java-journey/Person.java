@@ -4,6 +4,7 @@ class Person{
     private int age;
     protected String address;
     public String email;
+    private final int id;
 
     public String getFirstName(){
         return firstName;
@@ -26,6 +27,17 @@ class Person{
         }
     }
     public Person(String firstName, String lastName, int age){
+        this.id = 0;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        if(age >= 0 && age <= 100){
+            this.age = age;
+        }
+        System.out.println("Person constructor called");
+    }
+
+    public Person(int id, String firstName, String lastName, int age){
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         if(age >= 0 && age <= 100){

@@ -13,6 +13,7 @@ class Student extends Person{
         System.out.println("Student name is: " + getFirstName() + " " + getLastName());
         System.out.println("Student age is: " + getAge());
     }
+
     public Student(String firstName, String lastName, int age){
         super(firstName, lastName, age);
         /*this.firstName = firstName;
@@ -20,10 +21,14 @@ class Student extends Person{
         if(age >= 0 && age <=100){
             this.age = age;
         }*/
-       this.email = email;
-       this.address = address;
         System.out.println("Student object is created");
     }
+
+    public Student(int id, String firstName, String lastName, int age){
+        super(id, firstName, lastName, age);
+        System.out.println("Student object is created");
+    }
+
     public Student(String firstName, String lastName, int age, String email, String address){
         super(firstName,lastName,age);
         this.email = email;

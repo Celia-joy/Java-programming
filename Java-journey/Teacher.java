@@ -10,5 +10,9 @@ class Teacher extends Person{
     public void teachClass(){
         System.out.println("Teaching Java!");
     }
+    public Teacher(int id, String firstName, String lastName, int age){
+        super(id, firstName, lastName,age);
+        System.out.println("Teacher constructor called");
+    }
 
 }
