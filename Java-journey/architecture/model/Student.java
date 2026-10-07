@@ -19,7 +19,7 @@ public class Student {
         return name;
     }
 
-    public int age(){
+    public int getAge(){
         return age;
     }
     @Override
