@@ -30,11 +30,30 @@ public class Main {
         String name = "Jane";
         int age = 16;
 
-        displayValue(name);
-        displayValue(age);
+        // displayValue(name);
+        // displayValue(age);        
     }
 
-    public static <T> void displayValue(T value) {
-        System.out.println(value);
+    public static <T> T displayValue(T value) {
+        return value;
     }
+   /*static class Box<T> {
+        private T value;
+
+        public void setValue(T value) {
+            this.value = value;
+        }
+
+        public T getValue() {
+            return value;
+        }
+    }*/
+   class Display {
+    public static void main (String a[]){
+        List<String> names = new ArrayList<>();
+        names.add("Marius");
+        names.add("Aline");
+    }
+    List(Integer) num = new arrayList<> ();
+   }
 }
