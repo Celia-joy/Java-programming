@@ -8,7 +8,7 @@ class Main {
     }
 }
 */
-
+/*
 package com.lala;
 import java.util.HashSet;
 import java.util.Set;
@@ -34,5 +34,34 @@ class Main {
         System.out.println(e1.hashCode());
         System.out.println(e2.hashCode());
 
+    }
+}
+*/
+
+package com.lala;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args){
+        List<Student> students = new ArrayList<>();
+        students.add(new Student(103, "Aline", "Mugisha", 78.5));
+        students.add(new Student(101, "Celia", "Joy", 92.0));
+        students.add(new Student(104, "Eric", "Niyonzima", 85.5));
+        students.add(new Student(102, "David", "Uwimana", 88.0));
+
+        System.out.println("Original list: ");
+        students.forEach(System.out::println);
+
+        students.sort(null);
+        
+        System.out.println("\nSorted by ID(ascending):");
+        students.forEach(System.out::println);
+
+        students.sort(new GradeComparator());
+
+        System.out.println("\nSorted by Grade(descending):");
+        students.forEach(System.out::println);
     }
 }
