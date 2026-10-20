@@ -1,0 +1,3 @@
+Hello, Java file handling!
+We are learning buffered streams.
+This is our file-copying practical.
